@@ -17,7 +17,7 @@ Um die Mathe Helfer-Anwendung auszuführen, müssen Sie die folgenden Abhängigk
 
 Sie können die PyQt5-Bibliothek mit dem folgenden Befehl über pip installieren:
 
-''' pip install pyqt5 '''
+'''pip install pyqt5'''
 
 ## Ausführung
 
