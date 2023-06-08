@@ -34,6 +34,12 @@ Das Mathe Helfer-Fenster wird geöffnet, und Sie können mit dem Lösen von Math
 3. Die Anwendung gibt Ihnen eine Rückmeldung, ob Ihre Antwort richtig oder falsch ist.
 4. Der Punktestand wird aktualisiert und angezeigt.
 
+Sie können auch den Nummernbereich der zufällig generierten Fragen festlegen:
+
+1. Klicken Sie auf den "Nummernbereich festlegen" Button.
+2. Geben Sie den gewünschten Nummernbereich im Format "min-max" ein.
+3. Klicken Sie auf "OK", um den Nummernbereich zu übernehmen.
+
 Viel Spaß beim Lernen und Üben von Mathe!
 
 ------------------------------------------------------------------------------------------
