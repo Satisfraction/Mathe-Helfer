@@ -7,6 +7,7 @@ Mathe Helfer ist eine interaktive Anwendung, die Kindern beim Mathe lernen hilft
 - Generierung zufälliger Matheaufgaben (Addition, Subtraktion, Multiplikation, Division)
 - Eingabe der Antwort und Überprüfung auf Richtigkeit
 - Anzeige des aktuellen Punktestands
+- Fortschrittsverfolgung (Anzeige der Anzahl der richtigen Antworten und der erzielten Punktzahl)
 
 ## Anforderungen
 
@@ -17,8 +18,8 @@ Um die Mathe Helfer-Anwendung auszuführen, müssen Sie die folgenden Abhängigk
 
 Sie können die PyQt5-Bibliothek mit dem folgenden Befehl über pip installieren:
 
-
-pip install pyqt5 
+    ```python
+    pip install pyqt5
 
 
 ## Ausführung
@@ -33,12 +34,12 @@ Das Mathe Helfer-Fenster wird geöffnet, und Sie können mit dem Lösen von Math
 2. Geben Sie Ihre Antwort in das Textfeld ein und drücken Sie die Eingabetaste oder klicken Sie auf den "Überprüfen" Button.
 3. Die Anwendung gibt Ihnen eine Rückmeldung, ob Ihre Antwort richtig oder falsch ist.
 4. Der Punktestand wird aktualisiert und angezeigt.
+5. Die Anzahl der richtigen Antworten und die erzielte Punktzahl werden ebenfalls angezeigt.
 
-Sie können auch den Nummernbereich der zufällig generierten Fragen festlegen:
+### Sie können auch die Schwierigkeitsstufe der Matheaufgaben festlegen:
 
-1. Klicken Sie auf den "Nummernbereich festlegen" Button.
-2. Geben Sie den gewünschten Nummernbereich im Format "min-max" ein.
-3. Klicken Sie auf "OK", um den Nummernbereich zu übernehmen.
+1. Wählen Sie die gewünschte Schwierigkeitsstufe aus dem Dropdown-Menü aus. Die verfügbaren Schwierigkeitsstufen sind "Leicht", "Mittel" und "Schwer".
+2. Die Matheaufgaben werden entsprechend der ausgewählten Schwierigkeitsstufe generiert.
 
 Viel Spaß beim Lernen und Üben von Mathe!
 
@@ -50,10 +51,10 @@ Dieser Code importiert notwendige Module aus der PyQt5-Bibliothek und dem random
 
 Die `MathQuestion`-Klasse generiert zufällige Mathematikfragen mit zwei Zahlen und einem Operator (+, -, *, /). Sie berechnet die Antwort basierend auf dem Operator.
 
-Die `MathHelpApp`-Klasse erbt von `QMainWindow` und erstellt eine GUI, die ein Frage-Label, eine Antwort-Eingabe, ein Antwort-Label, ein Score-Label und zwei Buttons enthält.
+Die `MathHelpApp`-Klasse erbt von `QMainWindow` und erstellt eine GUI, die ein Frage-Label, eine Antwort-Eingabe, ein Antwort-Label, ein Score-Label und ein Dropdown-Menü für die Schwierigkeitsstufe enthält.
 
 Der "Neue Aufgabe"-Button (`generate_question_button`) generiert eine neue zufällige Mathematikfrage mit der `MathQuestion`-Klasse und aktualisiert das Frage-Label.
 
 Der "Überprüfen"-Button (`submit_button`) überprüft die Benutzereingabe gegen die richtige Antwort, die von der `MathQuestion`-Klasse generiert wird. Wenn die Antwort korrekt ist, aktualisiert er den Score, zeigt eine Nachricht im Antwort-Label an und aktualisiert das Score-Label. Wenn die Antwort falsch ist, zeigt er eine Nachricht im Antwort-Label an.
 
-Dieses Programm hilft Benutzern, ihre mathematischen Fähigkeiten zu üben und behält ihren Score im Auge.
+Dieses Programm hilft Benutzern, ihre mathematischen Fähigkeiten zu üben, behält ihren Score und ihren Fortschritt im Auge.
