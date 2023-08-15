@@ -17,14 +17,31 @@ DIFFICULTY_LEVELS = {
     'Schwer': (1, 100)
 }
 
+# class MathQuestion:
+#     def __init__(self, num1, num2, operator):
+#         self.num1 = num1
+#         self.num2 = num2
+#         self.operator = operator
+#         self.answer = self.get_answer()
+
+#     def get_answer(self):
+#         if self.operator == '+':
+#             return self.num1 + self.num2
+#         elif self.operator == '-':
+#             return self.num1 - self.num2
+#         elif self.operator == '*':
+#             return self.num1 * self.num2
+#         elif self.operator == '/':
+#             return self.num1 / self.num2
+
 class MathQuestion:
     def __init__(self, num1, num2, operator):
         self.num1 = num1
         self.num2 = num2
         self.operator = operator
-        self.answer = self.get_answer()
 
-    def get_answer(self):
+    @property
+    def answer(self):
         if self.operator == '+':
             return self.num1 + self.num2
         elif self.operator == '-':
